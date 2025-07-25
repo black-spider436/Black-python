@@ -3,23 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player</title>
+    <title>Chat Room</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #chat-log {
+            padding: 10px;
+            border: 1px solid #ccc;
+            height: 400px;
+            overflow-y: auto;
+        }
+        #chat-input {
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ccc;
+        }
+        #send-btn {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>Music Player</h1>
-    <audio id="audio" controls></audio>
-    <script>
-        const clientId = 'YOUR_CLIENT_ID';
-        const trackId = '123456789'; // Replace with the ID of the track you want to play
-        const audio = document.getElementById('audio');
+    <h1>Chat Room</h1>
+    <div id="chat-log"></div>
+    <input type="text" id="chat-input" placeholder="Type a message...">
+    <button id="send-btn">Send</button>
 
-        fetch(`https:                                                              
-            .then(response => response.json())
-            .then(data => {
-                audio.src = data.stream_url + `?client_id=${clientId}`;
-                audio.play();
-            })
-            .catch(error => console.error(error));
+    <script>
+        const chatLog = document.getElementById('chat-log');
+        const chatInput = document.getElementById('chat-input');
+        const sendBtn = document.getElementById('send-btn');
+
+        const chatbotResponses = {
+            'hello': 'Hi! How can I help you today?',
+            'how are you': 'I\'m good, thanks for asking!',
+            'what is your purpose': 'I\'m here to assist you with any questions or topics you\'d like to discuss.',
+            'default': 'Sorry, I didn\'t understand that. Can you please rephrase?'
+        };
+
+        sendBtn.addEventListener('click', () => {
+            const userMessage = chatInput.value.toLowerCase();
+            const chatMessage = document.createElement('div');
+            chatMessage.textContent = `You: ${chatInput.value}`;
+            chatLog.appendChild(chatMessage);
+
+            let chatbotResponse;
+            switch (userMessage) {
+                case 'hello':
+                    chatbotResponse = chatbotResponses['hello'];
+                    break;
+                case 'how are you':
+                    chatbotResponse = chatbotResponses['how are you'];
+                    break;
+                case 'what is your purpose':
+                    chatbotResponse = chatbotResponses['what is your purpose'];
+                    break;
+                default:
+                    chatbotResponse = chatbotResponses['default'];
+            }
+
+            const chatbotMessage = document.createElement('div');
+            chatbotMessage.textContent = `Chatbot: ${chatbotResponse}`;
+            chatLog.appendChild(chatbotMessage);
+
+            chatInput.value = '';
+        });
     </script>
 </body>
 </html>
