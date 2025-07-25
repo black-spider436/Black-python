@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Room</title>
+    <title>sir bravin ChatRoom</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,7 +29,7 @@
     </style>
 </head>
 <body>
-    <h1>Chat Room</h1>
+    <h1>sir bravin ChatRoom</h1>
     <div id="chat-log"></div>
     <input type="text" id="chat-input" placeholder="Type a message...">
     <button id="send-btn">Send</button>
@@ -39,40 +39,35 @@
         const chatInput = document.getElementById('chat-input');
         const sendBtn = document.getElementById('send-btn');
 
-        const chatbotResponses = {
-            'hello': 'Hi! How can I help you today?',
-            'how are you': 'I\'m good, thanks for asking!',
-            'what is your purpose': 'I\'m here to assist you with any questions or topics you\'d like to discuss.',
-            'default': 'Sorry, I didn\'t understand that. Can you please rephrase?'
-        };
-
         sendBtn.addEventListener('click', () => {
             const userMessage = chatInput.value.toLowerCase();
             const chatMessage = document.createElement('div');
             chatMessage.textContent = `You: ${chatInput.value}`;
             chatLog.appendChild(chatMessage);
 
-            let chatbotResponse;
-            switch (userMessage) {
-                case 'hello':
-                    chatbotResponse = chatbotResponses['hello'];
-                    break;
-                case 'how are you':
-                    chatbotResponse = chatbotResponses['how are you'];
-                    break;
-                case 'what is your purpose':
-                    chatbotResponse = chatbotResponses['what is your purpose'];
-                    break;
-                default:
-                    chatbotResponse = chatbotResponses['default'];
-            }
-
+            let chatbotResponse = getChatbotResponse(userMessage);
             const chatbotMessage = document.createElement('div');
             chatbotMessage.textContent = `Chatbot: ${chatbotResponse}`;
             chatLog.appendChild(chatbotMessage);
 
             chatInput.value = '';
         });
+
+        function getChatbotResponse(message) {
+            if (message.includes('hello')) {
+                return 'Hi! How can I help you today?';
+            } else if (message.includes('how are you')) {
+                return 'I\'m good, thanks for asking!';
+            } else if (message.includes('what is your purpose')) {
+                return 'I\'m here to assist you with any questions or topics you\'d like to discuss.';
+            } else if (message.includes('joke')) {
+                return 'Why don\'t scientists trust atoms? Because they make up everything!';
+            } else if (message.includes('help')) {
+                return 'I can help you with various topics. Type "hello" to start a conversation, "joke" for a joke, or ask me a question!';
+            } else {
+                return 'Sorry, I didn\'t understand that. Can you please rephrase?';
+            }
+        }
     </script>
 </body>
 </html>
