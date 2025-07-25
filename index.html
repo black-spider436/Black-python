@@ -3,112 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Run</title>
+    <title>Chat Room</title>
     <style>
         body {
-            margin: 0;
-            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
         }
-        #game-canvas {
-            border: 1px solid black;
+        #chat-log {
+            padding: 10px;
+            border: 1px solid #ccc;
+            height: 400px;
+            overflow-y: auto;
+        }
+        #chat-input {
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ccc;
+        }
+        #send-btn {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <canvas id="game-canvas" width="400" height="600"></canvas>
+    <h1>Chat Room</h1>
+    <div id="chat-log"></div>
+    <input type="text" id="chat-input" placeholder="Type a message...">
+    <button id="send-btn">Send</button>
+
     <script>
-        const canvas = document.getElementById('game-canvas');
-        const ctx = canvas.getContext('2d');
-        let playerX = 100;
-        let playerY = 500;
-        let playerSpeed = 5;
-        let obstacles = [];
-        let score = 0;
-        let isJumping = false;
-        let jumpHeight = 0;
+        const chatLog = document.getElementById('chat-log');
+        const chatInput = document.getElementById('chat-input');
+        const sendBtn = document.getElementById('send-btn');
 
-        function drawPlayer() {
-            ctx.fillStyle = 'red';
-            ctx.fillRect(playerX, playerY, 50, 50);
-        }
-
-        function drawObstacles() {
-            obstacles.forEach((obstacle) => {
-                ctx.fillStyle = 'blue';
-                ctx.fillRect(obstacle.x, obstacle.y, 50, 50);
-            });
-        }
-
-        function update() {
-            // Move obstacles
-            obstacles.forEach((obstacle) => {
-                obstacle.x -= 5;
-                if (obstacle.x < 0) {
-                    obstacles.splice(obstacles.indexOf(obstacle), 1);
-                    score++;
-                }
-            });
-
-            // Generate new obstacles
-            if (Math.random() < 0.1) {
-                obstacles.push({ x: canvas.width, y: 550 });
-            }
-
-            // Update player position
-            if (isJumping) {
-                playerY -= 10;
-                jumpHeight += 10;
-                if (jumpHeight > 150) {
-                    isJumping = false;
-                }
-            } else if (playerY < 500) {
-                playerY += 10;
-            }
-
-            // Check collision
-            obstacles.forEach((obstacle) => {
-                if (checkCollision(playerX, playerY, obstacle.x, obstacle.y)) {
-                    alert('Game Over!');
-                    // Reset game state
-                    playerX = 100;
-                    playerY = 500;
-                    obstacles = [];
-                    score = 0;
-                    isJumping = false;
-                    jumpHeight = 0;
-                }
-            });
-        }
-
-        function checkCollision(x1, y1, x2, y2) {
-            return x1 < x2 + 50 && x1 + 50 > x2 && y1 < y2 + 50 && y1 + 50 > y2;
-        }
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === ' ') {
-                if (!isJumping) {
-                    isJumping = true;
-                    jumpHeight = 0;
-                }
+        sendBtn.addEventListener('click', () => {
+            const message = chatInput.value;
+            if (message !== '') {
+                const chatMessage = document.createElement('div');
+                chatMessage.textContent = `You: ${message}`;
+                chatLog.appendChild(chatMessage);
+                chatInput.value = '';
             }
         });
 
-        function loop() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            drawPlayer();
-            drawObstacles();
-            update();
-            ctx.fillStyle = 'black';
-            ctx.font = '24px Arial';
-            ctx.textAlign = 'left';
-            ctx.textBaseline = 'top';
-            ctx.fillText(`Score: ${score}`, 10, 10);
-            requestAnimationFrame(loop);
-        }
-
-        loop();
+        // To add real-time chat functionality, you would need to use WebSockets or a library like Socket.IO
     </script>
 </body>
 </html>
+
 
         
