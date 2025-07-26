@@ -3,37 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>President Ruto Animation</title>
+    <title>President Ruto Face Animation</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
+        .face {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            margin: 50px auto;
         }
-        .ruto {
-            font-size: 48px;
-            font-weight: bold;
-            animation: move 5s infinite;
-            color: #00698f;
+        .eyes {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #000;
+            animation: blink 5s infinite;
         }
-
-        @keyframes move {
+        .eyes.right {
+            left: 130px;
+        }
+        .mouth {
+            position: absolute;
+            top: 120px;
+            left: 50px;
+            width: 100px;
+            height: 20px;
+            border-bottom: 2px solid #000;
+            animation: smile 5s infinite;
+        }
+        @keyframes blink {
             0% {
-                transform: translateX(0);
+                transform: scaleY(1);
             }
             50% {
-                transform: translateX(200px);
+                transform: scaleY(0.1);
             }
             100% {
-                transform: translateX(0);
+                transform: scaleY(1);
+            }
+        }
+        @keyframes smile {
+            0% {
+                transform: scaleX(1);
+            }
+            50% {
+                transform: scaleX(1.2);
+            }
+            100% {
+                transform: scaleX(1);
             }
         }
     </style>
 </head>
 <body>
-    <h1>President Ruto Animation</h1>
-    <div class="ruto">President William Ruto</div>
+    <div class="face">
+        <div class="eyes"></div>
+        <div class="eyes right"></div>
+        <div class="mouth"></div>
+    </div>
 </body>
 </html>
+
 
 
 
