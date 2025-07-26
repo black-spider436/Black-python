@@ -3,74 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sir bravin ChatRoom</title>
+    <title>President Ruto</title>
     <style>
-        body {
+        body. {
             font-family: Arial, sans-serif;
+            text-align: center;
         }
-        #chat-log {
-            padding: 10px;
-            border: 1px solid #ccc;
-            height: 400px;
-            overflow-y: auto;
-        }
-        #chat-input {
-            padding: 10px;
-            width: 80%;
-            border: 1px solid #ccc;
-        }
-        #send-btn {
-            padding: 10px;
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            cursor: pointer;
+        h1 {
+            color: #00698f;
         }
     </style>
 </head>
 <body>
-    <h1>sir bravin ChatRoom</h1>
-    <div id="chat-log"></div>
-    <input type="text" id="chat-input" placeholder="Type a message...">
-    <button id="send-btn">Send</button>
-
-    <script>
-        const chatLog = document.getElementById('chat-log');
-        const chatInput = document.getElementById('chat-input');
-        const sendBtn = document.getElementById('send-btn');
-
-        sendBtn.addEventListener('click', () => {
-            const userMessage = chatInput.value.toLowerCase();
-            const chatMessage = document.createElement('div');
-            chatMessage.textContent = `You: ${chatInput.value}`;
-            chatLog.appendChild(chatMessage);
-
-            let chatbotResponse = getChatbotResponse(userMessage);
-            const chatbotMessage = document.createElement('div');
-            chatbotMessage.textContent = `Chatbot: ${chatbotResponse}`;
-            chatLog.appendChild(chatbotMessage);
-
-            chatInput.value = '';
-        });
-
-        function getChatbotResponse(message) {
-            if (message.includes('hello')) {
-                return 'Hi! am sir bravin Ai How can I help you today?';
-            } else if (message.includes('how are you')) {
-                return 'I\'m good, thanks for asking!';
-            } else if (message.includes('what is your purpose')) {
-                return 'I\'m here to assist you with any questions or topics you\'d like to discuss.';
-            } else if (message.includes('joke')) {
-                return 'Why don\'t scientists trust atoms? Because they make up everything!';
-            } else if (message.includes('help')) {
-                return 'I can help you with various topics. Type "hello" to start a conversation, "joke" for a joke, or ask me a question!';
-            } else {
-                return 'Sorry, I didn\'t understand that. Can you please rephrase?';
-            }
-        }
-    </script>
+    <h1>President William Ruto</h1>
 </body>
 </html>
+
 
 
 
