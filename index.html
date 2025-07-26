@@ -3,19 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>President Ruto</title>
+    <title>President Ruto Animation</title>
     <style>
-        body. {
+        body {
             font-family: Arial, sans-serif;
             text-align: center;
         }
-        h1 {
+        .ruto {
+            font-size: 48px;
+            font-weight: bold;
+            animation: move 5s infinite;
             color: #00698f;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(200px);
+            }
+            100% {
+                transform: translateX(0);
+            }
         }
     </style>
 </head>
 <body>
-    <h1>President William Ruto</h1>
+    <h1>President Ruto Animation</h1>
+    <div class="ruto">President William Ruto</div>
 </body>
 </html>
 
