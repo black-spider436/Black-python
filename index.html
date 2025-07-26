@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>President Ruto Face Animation</title>
+    <title>Face Animation</title>
     <style>
         .face {
             position: relative;
@@ -12,6 +12,7 @@
             border-radius: 50%;
             background-color: #f0f0f0;
             margin: 50px auto;
+            animation: rotate 5s infinite;
         }
         .eyes {
             position: absolute;
@@ -21,7 +22,6 @@
             height: 20px;
             border-radius: 50%;
             background-color: #000;
-            animation: blink 5s infinite;
         }
         .eyes.right {
             left: 130px;
@@ -33,28 +33,16 @@
             width: 100px;
             height: 20px;
             border-bottom: 2px solid #000;
-            animation: smile 5s infinite;
         }
-        @keyframes blink {
+        @keyframes rotate {
             0% {
-                transform: scaleY(1);
+                transform: rotate(0deg);
             }
             50% {
-                transform: scaleY(0.1);
+                transform: rotate(360deg);
             }
             100% {
-                transform: scaleY(1);
-            }
-        }
-        @keyframes smile {
-            0% {
-                transform: scaleX(1);
-            }
-            50% {
-                transform: scaleX(1.2);
-            }
-            100% {
-                transform: scaleX(1);
+                transform: rotate(0deg);
             }
         }
     </style>
@@ -67,6 +55,7 @@
     </div>
 </body>
 </html>
+
 
 
 
