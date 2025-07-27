@@ -3,62 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Face Animation</title>
+    <title>sir bravin Dancing Cartoon Characters</title>
     <style>
-        .face {
-            position: relative;
-            width: 200px;
-            height: 200px;
+        .character {
+            position: absolute;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             background-color: #f0f0f0;
-            margin: 50px auto;
-            animation: rotate 5s infinite;
+            animation: dance 2s infinite;
         }
-        .eyes {
-            position: absolute;
-            top: 50px;
-            left: 50px;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: #000;
+        .character1 {
+            left: 100px;
+            background-color: #ff69b4;
+            animation-delay: 0s;
         }
-        .eyes.right {
-            left: 130px;
+        .character2 {
+            left: 300px;
+            background-color: #34a85a;
+            animation-delay: 1s;
         }
-        .mouth {
-            position: absolute;
-            top: 120px;
-            left: 50px;
-            width: 100px;
-            height: 20px;
-            border-bottom: 2px solid #000;
-        }
-        @keyframes rotate {
+        @keyframes dance {
             0% {
-                transform: rotate(0deg);
+                transform: translateY(0);
             }
             50% {
-                transform: rotate(360deg);
+                transform: translateY(-20px);
             }
             100% {
-                transform: rotate(0deg);
+                transform: translateY(0);
             }
         }
     </style>
 </head>
 <body>
-    <div class="face">
-        <div class="eyes"></div>
-        <div class="eyes right"></div>
-        <div class="mouth"></div>
-    </div>
+    <div class="character character1"></div>
+    <div class="character character2"></div>
 </body>
 </html>
-
-
-
-
-
-
-        
