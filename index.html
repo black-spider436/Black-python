@@ -3,31 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Walking Cat</title>
+    <title>Dancing Tom and Jerry</title>
     <style>
-        .cat {
-            position: relative;
+        .tom {
+            position: absolute;
+            left: 100px;
+            top: 100px;
             width: 100px;
             height: 100px;
-            background-image: url('https://via.placeholder.com/100'); /* replace with cat image */
-            background-size: cover;
-            animation: walk 2s infinite;
+            background-color: #3498db;
+            border-radius: 50%;
+            animation: danceTom 2s infinite;
         }
-        @keyframes walk {
+        .jerry {
+            position: absolute;
+            left: 300px;
+            top: 100px;
+            width: 50px;
+            height: 50px;
+            background-color: #f1c40f;
+            border-radius: 50%;
+            animation: danceJerry 2s infinite;
+        }
+        @keyframes danceTom {
             0% {
-                transform: translateX(0);
+                transform: translateY(0);
             }
             50% {
-                transform: translateX(200px);
+                transform: translateY(-20px);
             }
             100% {
-                transform: translateX(0);
+                transform: translateY(0);
+            }
+        }
+        @keyframes danceJerry {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
             }
         }
     </style>
 </head>
 <body>
-    <div class="cat"></div>
+    <div class="tom"></div>
+    <div class="jerry"></div>
 </body>
 </html>
-
