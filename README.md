@@ -24,8 +24,4 @@
  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=70&pause=500&color=8A2BE2&center=true&width=1150&height=200&lines=WHISHES;FROM+ABOVE" alt="Typing SVG" /></a>
   </div>
 
-<div align="center">
-  <img src="https://files.catbox.moe/6m0l1v.jpg" width="300" style="border-radius: 20px; box-shadow: 0 0 20px #00ffff;"/>
-</div>
-<a href
 @sir jarrydaktari 🥰
