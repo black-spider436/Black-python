@@ -19,3 +19,6 @@
 </h1>
  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=70&pause=500&color=8A2BE2&center=true&width=1150&height=200&lines=WHISHES;FROM+ABOVE" alt="Typing SVG" /></a>
   </div>
+
+
+@sir bravin 
