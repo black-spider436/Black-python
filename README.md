@@ -11,17 +11,19 @@
 <div align="center">
   <img src="https://files.catbox.moe/pboqws.jpg" width="300" style="border-radius: 20px; box-shadow: 0 0 20px #00ffff;"/>
 </div>
+
+💝💝💝💝💝💝💝💝🌹
+1. "Sis, you're more than just family - you're my best friend. Love you!"
+2. "Thanks for being my rock, partner in crime, and forever supporter. Love you, sis!"
+3. "You're the queen of my heart, sis. Happy [grl-day]!"
+4. "Sisters by blood, friends by choice. Love you!"
+5. "You're amazing, sis! Thanks for being you."
+"Love you, sis!"
+💝💝💝💝💝💝💝💝🌹
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=ff0000&center=true&width=1000&height=200&lines=HAPPY;GIRLFRIEND'S;DAY;TO+ALL;GIRLS;CELEBRATING+ON;THESE+DAY" alt="Typing SVG" /></a>
-∆∆∆∆∆∆∆∆∆🌹🌹🌹∆∆∆∆∆∆∆∆∆∆
-1. "You're the reason I wake up smiling every day. Happy Girlfriend Day, my love!"
-2. "In your eyes, my heart finds home. Forever grateful for you."
-3. "You're my forever adventure, my partner in every sense. Love you!"
-4. "Every moment with you is a gift. Thank you for being mine."
-5. "You're the melody that fills my heart with joy. Happy Girlfriend Day!"
-∆∆∆∆∆∆∆∆∆∆🌹🌹🌹∆∆∆∆∆
 
 </h1>
- <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=70&pause=500&color=8A2BE2&center=true&width=1150&height=200&lines=WISHES;FROM+ABOVE" alt="Typing SVG" /></a>
+ <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=70&pause=500&color=8A2BE2&center=true&width=1150&height=200&lines=WISHES;FROM+YOUR;BROTHER" alt="Typing SVG" /></a>
   </div>
 
 @sir bravin 🥰
