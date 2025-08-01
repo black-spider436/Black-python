@@ -3,7 +3,7 @@
 <h1 align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=6000&color=00FF00&background=000000&center=true&vCenter=true&width=600&lines=🌹🌹🌹❣️ketu;happy+girlfriend's+day❣️❣️❣️" alt="Typing Animation">
 </h1>
-
+@sir bravin 🥰
 <div align="center">
   <img src="https://files.catbox.moe/pboqws.jpg" width="300" style="border-radius: 20px; box-shadow: 0 0 20px #00ffff;"/>
 </div>
@@ -21,5 +21,3 @@
 </h1>
  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=70&pause=500&color=8A2BE2&center=true&width=1150&height=200&lines=WISHES;FROM+YOUR;BROTHER" alt="Typing SVG" /></a>
   </div>
-
-@sir bravin 🥰
