@@ -15,7 +15,7 @@
 4. "Every moment with you is a gift. Thank you for being mine."
 5. "You're the melody that fills my heart with joy. Happy Girlfriend Day!"
 
-Or keep it simple:
+
 </h1>
  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=70&pause=500&color=8A2BE2&center=true&width=1150&height=200&lines=WHISHES;FROM+ABOVE" alt="Typing SVG" /></a>
   </div>
