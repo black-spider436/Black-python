@@ -6,6 +6,6 @@
 <div align="center">
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=6000&color=00FF00&background=000000&center=true&vCenter=true&width=600&lines="💕💕💕Happy+Girlfriend;Day+to the;love+of+my;life+You+re;the+sunshine;that+brightens;up+my;day;You+re+not;just+my+girlfriend;you+re;my+best+friend;partner;in+crime;and+soulmate;Love+you;more+than+words;can+say;I+m;so+grateful;to;have+you;by+my+side;here+s;to+many+more;adventures+together;happy+Girlfriend;Day+You+re;the+reason;my+heart;beats+faster;my+smile;grows+wider;and+my;life+feels;more+meaningful;Love+you;In+a+world;full+of:people+you+re;the+one+I;want+to;spend+forever;with;Happy+Girlfriend+Day;my+love"alt="Typing Animation">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=6000&color=00FF00&background=000000&center=true&vCenter=true&width=600&lines=💕💕💕Happy+Girlfriend;Day+to the;love+of+my;life+You+re;the+sunshine;that+brightens;up+my;day;You+re+not;just+my+girlfriend;you+re;my+best+friend;partner;in+crime;and+soulmate;Love+you;more+than+words;can+say;I+m;so+grateful;to;have+you;by+my+side;here+s;to+many+more;adventures+together;happy+Girlfriend;Day+You+re;the+reason;my+heart;beats+faster;my+smile;grows+wider;and+my;life+feels;more+meaningful;Love+you;In+a+world;full+of:people+you+re;the+one+I;want+to;spend+forever;with;Happy+Girlfriend+Day;my+love" alt="Typing Animation">
 </h1>
   
