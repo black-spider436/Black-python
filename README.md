@@ -5,7 +5,7 @@
 </h1>
             @LIZY❤️‍🔥
  <div align="center">
-  <img src="https://files.catbox.moe/7owcei.jpg" width="300" style="border-radius: 20px; box-shadow: 0 0 20px #00ffff;"/>
+  <img src="https://files.catbox.moe/zl81y9.jpg" width="300" style="border-radius: 20px; box-shadow: 0 0 20px #00ffff;"/>
 </div>
 1. "Happy birthday to an amazing girl! Wishing you a day filled with love, laughter, and all your favorite things."
 2. "You're another year older, and another year more beautiful! Happy birthday, gorgeous!"
