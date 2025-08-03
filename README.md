@@ -22,3 +22,6 @@
 </h1>
  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=70&pause=500&color=8A2BE2&center=true&width=1150&height=200&lines=HUWA+NATUMIA;CAKE,CHROME+AND+CHICKEN;" alt="Typing SVG" /></a>
   </div>
+# Release Date: 6th August 2025 
+
+![Powered By David Cyril Tech](https://github.com/suzuki-0000/CountdownLabel/raw/master/Screenshots/example01.gif)
