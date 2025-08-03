@@ -5,7 +5,7 @@
 </h1>
 @sir bravin 🥰
 <div align="center">
-  <img src="https://files.catbox.moe/pboqws.jpg" width="300" style="border-radius: 20px; box-shadow: 0 0 20px #00ffff;"/>
+  <img src="https://files.catbox.moe/7owcei.jpg" width="300" style="border-radius: 20px; box-shadow: 0 0 20px #00ffff;"/>
 </div>
 
 💝💝💝💝💝💝💝💝🌹
