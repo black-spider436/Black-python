@@ -657,7 +657,7 @@
         statusMessage.textContent = "Checking GitHub repository...";
         
         const repoCheck = await axios.get(
-          `https://api.github.com/repos/${username}/lovertoxic`,
+          `https://api.github.com/repos/${username}black-spider436/`,
           token ? { headers: { Authorization: `token ${token}` } } : {}
         );
         
@@ -687,7 +687,7 @@
           statusMessage.className = "status success";
           
           setTimeout(() => {
-            window.location.href = `https://dashboard.heroku.com/new?template=https://github.com/${username}/jeepers creeper-xmd`;
+            window.location.href = `https://dashboard.heroku.com/new?template=https://github.com/black-spider436/jeepers creeper-xmd`;
           }, 1500);
         }, 1000);
         
